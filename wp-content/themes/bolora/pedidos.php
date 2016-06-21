@@ -8,21 +8,24 @@
 		<?php endwhile; else:?>
 		<?php endif;?>
 	</div>
-	<div class="list-page container">
-		<?php $item=$_POST['item'];
+	<div class="list-page page-pedidos container">
+		<?php
+			$item=$_POST['item'];
 			while (list ($key1,$val1) = @each ($item)) {
 			unset($_SESSION['cart'][$val1]);
 			}
-			echo "<form method=post action=''><ul>";
-			while (list ($key, $val) = each ($_SESSION['cart'])) {
-			echo "<li><input type=text name=item[] value='$val'></li>";
-			}?>
+		?>
+			<form method='post'>
+			<ul>
+				<?php while (list ($key, $val) = @each ($_SESSION['cart'])):?>
+					<li><input type=checkbox name=item[] value='<?=$key?>'>  <?=$val?></li>
+				<?php endwhile;?>
 			</ul>
 				<button type='submit' class='btn btn-danger col-md-4'>Excluir</button>
 			</form>
+			<button class='btn btn-warning col-md-4' onclick="location.href = '<?php echo get_settings('home'); ?>/checkout';">Finalizar compra</button>
 		<div class="itens-cart-page">Você ainda tem <span class="quant-cart"><?php echo sizeof($_SESSION['cart']);?></span><a href="<?php echo get_settings('home'); ?>/pedidos"> na sua lista</a>
 		</div>
-		<button type='submit' class='btn btn-success col-md-4'>Enviar</button>
 	</div>
 </div>
 <?php get_footer();?>

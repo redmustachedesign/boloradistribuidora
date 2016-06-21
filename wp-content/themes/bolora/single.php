@@ -13,6 +13,7 @@
 					<div class="col-md-6">
 						<h1><?php the_title();?></h1>
 						<p><?php the_content();?></p>
+						<p><strong>Código: <?php $key="code";echo get_post_meta($post->ID,$key,true);?></strong></p>
 					</div>
 				</div>
 				<div class="single-tags">

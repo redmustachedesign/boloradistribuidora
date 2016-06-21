@@ -24,7 +24,7 @@
 				<div class="col-md-4 produtos">
 					<div class="thumbnail produtos-thumb">
 						<a href="<?php the_Permalink()?>">
-							<div class="img-circle produtos-img">
+							<div class="produtos-img">
 								<?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
 								<img src="<?php echo $url; ?>">
 							</div>
