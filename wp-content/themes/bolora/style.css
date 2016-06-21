@@ -1,0 +1,279 @@
+/*
+Theme Name: Bolora Distribuidora
+Theme URI: http://boloradistribuidora.com.br
+Description: Este tema foi desenvolvido no curso Desenvolvendo portais com Wordpress da UpInside!
+Version: 1.0
+Author: Red Mustache Design
+Author URL:
+Tags: vendas, produtos, eletronicos, casa
+*/
+
+/*----------FONT-----------*/
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600);
+@import url(http://fonts.googleapis.com/css?family=Francois+One);
+
+/*------STYLE-------*/
+
+p{
+	line-height: 25px;
+}
+
+
+body{
+	background: white;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*HEADER*/
+header{
+ text-align: center;
+ min-height: 270px;
+ overflow: hidden;
+}
+
+header img{
+	width: 280px;
+	height: 270px;
+}
+
+.header-menu{
+	font-size: 17px;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header-menu li{
+	list-style: none;
+	display: inline-block;
+	/*padding: 0px 30px;*/
+	margin-top: 150px;
+}
+
+.header-menu a{
+	color: black;
+}
+
+.header-menu a:hover{
+	color: #8bc53e;
+}
+
+.search-header{
+	margin: 0 auto;
+	float: none;
+}
+
+/*CART*/
+.cart-list{
+	position: fixed;
+	background: #222;
+	width: 100%;
+	z-index: 999;
+	color: white;
+	padding: 10px 0px 5px 0px ;
+	font-size: 12px;
+}
+
+.quant-cart{
+	background: #D91E18;
+	padding: 5px 10px;
+	border-radius: 20px;
+	color: white;
+}
+
+
+/*--- SLIDE BOX ---*/
+#slide-box{
+	margin-top: 100px;
+}
+
+/*--- CONTENTE-AREAS ---*/
+.content-areas{
+	text-align: center;
+	padding: 30px 0px;
+	margin-top: 50px;
+	border-top: 1px solid #8bc53e;
+}
+
+.content-areas h1{
+	color: #8bc53e;
+	margin-bottom: 50px;
+}
+
+.btn-areas{
+	margin: auto;
+	margin-top: 40px;
+	width: 300px;
+	font-size: 20px;
+}
+
+.content-areas input{
+	margin: 12px 0px;
+}
+
+/*--- QUEM SOMOS ---*/
+
+/*--- PRODUTOS --- */
+.produtos p{
+	color: #000;
+}
+.produtos h3{
+	color: #8bc53e;
+}
+
+.produtos{
+	text-decoration: none;
+}
+
+.produtos :hover{
+	text-decoration: none;
+}
+
+.produtos-thumb{
+	transition: linear .2s;
+}
+
+.produtos-thumb:hover{
+	box-shadow:  3px 3px 5px rgba(0,0,0, .075);
+}
+
+.produtos-img{
+	width: 250px;
+	height: 250px;
+	overflow: hidden;
+	margin: auto;
+	margin-top: 10px;
+}
+
+.produtos-img img{
+	width: 450px;
+}
+
+.btn-produtos a{
+	color: white;
+}
+
+.exemplo-prod{
+	border: 1px solid #ececec;
+	padding: 10px;
+	margin: 15px 0;
+}
+
+.exemplo-prod span{
+	color: #999;
+}
+
+/*--- FALE CONOSCO ---*/
+#fale-conosco p{
+	margin:  0 auto;
+	float: none;
+}
+
+.form-contato{
+	margin: 0 auto;
+	float:  none;
+}
+
+.text-area{
+	width: 100%;
+	height: 180px;
+	border-radius: 5px;
+	border-color:#ddd;
+	box-shadow: inset 0 1px 1px rgba(0,0,0, .075);
+	padding: 6px 12px;
+	margin-top: 10px;
+}
+
+/*---- SINGLE -----*/
+#single-post{
+	text-align: left;;
+}
+
+.produtos-single img{
+	width: 100%;
+}
+
+.single-tags{
+	margin-top: 10px;
+	padding: 5px 15px;
+	background: #efefef;
+	font-size: 12px;
+}
+
+#form-prod-single{
+	height: 100%;
+	overflow: hidden;
+}
+
+#form-prod-single input{
+	margin: 0px;
+	border-radius: 5px;
+	border: 1px solid #b2b2b2;
+	padding: 5px 15px;
+	margin-right: 10px;
+}
+
+.itens-cart-single{
+	clear: both;
+	margin-top: 15px;
+}
+
+/*--PAGE--*/
+.page{
+	height: 100%;
+	overflow: hidden;
+	padding-bottom:20px;
+}
+
+.list-page{
+	height:100%;
+	overflow:hidden;
+	padding-bottom:20px;
+}
+
+.list-page form{
+	height:100%;
+	overflow:hidden;
+}
+
+.list-page ul{
+	padding: 5px !important;
+}
+
+.list-page li{
+	list-style:none;
+	border: 1px solid #b2b2b2;
+	border-radius: 5px;
+	padding: 20px 15px;
+	margin-bottom: 10px;
+}
+
+.itens-cart-page{
+	clear:both;
+	margin: 30px 0px;
+}
+
+/*--- CATEGORY ---*/
+#category  .produtos-thumb{
+	min-height: 466px;
+}
+
+/*--------- FOOTER --------------------------*/
+footer{
+	text-align: center;
+	background: #8bc53e;
+	color: white;
+	padding: 30px 0px 20px 0px;
+}
+
+footer a{
+	color: white;
+}
+
+footer #credito{
+	margin-top: 10px;
+	font-size: 10px;
+}
+
+/*---------------------- SMARTPHONE ---------------------*/
+
