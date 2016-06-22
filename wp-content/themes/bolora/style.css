@@ -45,14 +45,15 @@ header img{
 .header-menu{
 	font-size: 17px;
 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+	clear: both;
+	padding: 0px;
 }
 
 .header-menu li{
 	list-style: none;
 	display: inline-block;
-	/*padding: 0px 30px;*/
-	margin-top: 150px;
+	padding: 0px 50px;
+	margin-bottom: 30px;
 }
 
 .header-menu a{
@@ -69,6 +70,10 @@ header img{
 }
 
 /*CART*/
+#menu-celular{
+	display: none;
+}
+
 .cart-list{
 	position: fixed;
 	background: #222;
@@ -83,7 +88,8 @@ header img{
 	background: #D91E18;
 	padding: 5px 10px;
 	border-radius: 20px;
-	color: white;
+	color: white !important;
+	margin-left: 5px;
 }
 
 
@@ -309,15 +315,33 @@ footer #credito{
 /*CELULAR RETRATO*/
 @media (max-width: 479px) {
 	.header-menu li{
-		margin-top: 15px;
+		margin-top: 5px;
 		margin-bottom: 20px;
+		padding: 10px;
+		display: block;
 	}
+	#menu-celular{
+		position: fixed;
+		background: #333;
+		color: white;
+		padding: 10px;
+		font-size: 20px;
+		display: block;
+		z-index: 999;
+	}
+
 	.cart-list{
 		display: none;
+		text-align: right;
+		padding-right: 10px;
 	}
 	.produtos-img{
 		width: 100%;
 		height: 100%;
+	}
+
+	#category  .produtos-thumb{
+		min-height: 300px;
 	}
 }
 

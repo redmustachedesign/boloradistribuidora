@@ -36,17 +36,17 @@
 				$mensagem.='Email:'.$_REQUEST['Email'].'/n';
 				$mensagem.='Telefone:'.$_REQUEST['Telefone'].'/n';
 
-				$to='boloradistribuidora@hotmail.com';
+				$to='boloradistribuidora@boloradistribuidora.com.br';
 				$subject='Pedido feito pelo site';
-				$header='header: from:boloradistribuidora@hotmail.com';
+				$header='header: from:boloradistribuidora@boloradistribuidora.com.br';
 				@mail($to, $subject, $mensagem,$header);
 			?>
 			<div class="alert alert-success" role="alert"> <strong>Parabéns</strong> seu email foi enviado com sucesso.</div>
 			<?php unset($_SESSION['cart']);?>
-			<?php else:?>	
+			<?php else:?>
 			<div class="alert alert-warning" role="alert"> <strong>Atenção</strong> Verfique todos os campos acima para formular seu pedido.</div>
 			<?php endif;?>
-			
+
 		<div class="itens-cart-page">Você ainda tem <span class="quant-cart"><?php echo sizeof($_SESSION['cart']);?></span><a href="<?php echo get_settings('home'); ?>/pedidos"> na sua lista</a>
 		</div>
 	</div>

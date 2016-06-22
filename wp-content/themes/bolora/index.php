@@ -3,8 +3,7 @@
 	<div class="container" id="slide-box">
 		<ul class="bxslider">
 				<li><img src="<?php bloginfo('template_directory'); ?>/images/teste-slide.png" /></li>
-				<li><img src="<?php bloginfo('template_directory'); ?>/images/teste-slide.png" /></li>
-				<li><img src="<?php bloginfo('template_directory'); ?>/images/teste-slide.png" /></li>
+				<li><img src="<?php bloginfo('template_directory'); ?>/images/img02.jpeg" /></li>
 			</ul>
 	</div>
 	<!-- QUEM SOMOS -->

@@ -8,5 +8,9 @@ $(document).ready(function(){
 	$('.bxslider').bxSlider({
 		auto: true
 	});
+	//MENU CELULAR
+	$('#menu-celular').click(function(){
+		$('.cart-list').slideToggle(400);
+	})
 
 });

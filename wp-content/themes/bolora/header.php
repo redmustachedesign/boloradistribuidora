@@ -43,22 +43,23 @@
 			<?php endif ?>
 		</div>
 	</div>
+	<div id="menu-celular">
+		<span class='glyphicon glyphicon-menu-hamburger'></span>
+	</div>
 	<header>
 		<div class="container">
-			<div class="row">
-				<ul class="header-menu col-md-4">
-					<li class="col-md-6"><a href="<?php echo get_settings('home'); ?>">Home</a></li>
-					<li class="col-md-6" id="menu-quem-somos"><a href="<?php echo get_settings('home'); ?>/#quem-somos">Quem somos</a></li>
-				</ul>
-				<span class="col-md-4">
+				<span class="col-md-4 col-md-offset-4">
 					<img src="<?php bloginfo('template_directory'); ?>/images/logoHeader.png">
 				</span>
-				<ul class="header-menu col-md-4">
-					<li class="col-md-6" id="menu-nossos-produtos"><a href="<?php echo get_settings('home'); ?>/#nossos-produtos">Produtos</a></li>
-					<li class="col-md-6" id="menu-fale-conosco"><a href="<?php echo get_settings('home'); ?>/#fale-conosco">Fale conosco</a></li>
+				<ul class="header-menu">
+					<li><a href="<?php echo get_settings('home'); ?>">Home</a></li>
+					<li id="menu-quem-somos"><a href="<?php echo get_settings('home'); ?>/#quem-somos">Quem somos</a></li>
+					<?php $id_da_categoria = get_cat_id('produtos'); $link_da_categoria = get_category_link($id_da_categoria); ?>
+					<li id="menu-nossos-produtos"><a href="<?php echo $link_da_categoria;?>">Produtos</a></li>
+					<li id="menu-fale-conosco"><a href="<?php echo get_settings('home'); ?>/#fale-conosco">Fale conosco</a></li>
 				</ul>
 			</div>
-
+			<!-- SEARCH -->
 			<div class="col-md-6 search-header">
 			<form role="search" method="get" id="searchform" action="<?php echo get_option('home'); ?>">
 				<div class="input-group">

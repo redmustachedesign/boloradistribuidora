@@ -24,18 +24,18 @@
 			<div class="exemplo-prod">
 				<p>Insira o código do produto e a quantidade separados por um "-"</p>
 				<p><span>Exemplo: 123456 - 20 unidades</span></p>
-			</div>
-			<?php
-				$product=$_POST['product'];
-				if(strlen($product)>=1){
-					array_push($_SESSION['cart'],$product); // Items added to cart
-				}
-			?>
-			<form id="form-prod-single" method="post">
-				<input type='text' name="product" class="col-md-3" placeholder='Escreva o código + quantidade'>
-				<button type="submit" class=" btn btn-primary col-md-2">Adicionar produto</button>
-			</form>
-			<div class="itens-cart-single">Você já adicionou <span class="quant-cart"><?php echo sizeof($_SESSION['cart']);?></span><a href="<?php echo get_settings('home'); ?>/pedidos"> à sua lista</a>
+				<?php
+					$product=$_POST['product'];
+					if(strlen($product)>=1){
+						array_push($_SESSION['cart'],$product); // Items added to cart
+					}
+				?>
+				<form id="form-prod-single" method="post">
+					<input type='text' name="product" class="col-md-3" placeholder='Escreva o código + quantidade'>
+					<button type="submit" class=" btn btn-primary col-md-2">Adicionar produto</button>
+				</form>
+				<div class="itens-cart-single">Você já adicionou <span class="quant-cart"><?php echo sizeof($_SESSION['cart']);?></span><a href="<?php echo get_settings('home'); ?>/pedidos"> à sua lista</a>
+				</div>
 			</div>
 		</div>
 	</div>
