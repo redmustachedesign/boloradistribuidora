@@ -2,6 +2,7 @@
 	<!-- CATEGORY-POST-->
 	<div class="container content-areas" id="category-post">
 		<div id="category">
+			<?php query_posts('showposts=6'. '&orderby=rand');?>
 			<?php if (have_posts()): while (have_posts()) : the_post();?>
 				<div class="col-md-4 col-xs-6 produtos">
 					<div class="thumbnail produtos-thumb">

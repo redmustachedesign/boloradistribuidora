@@ -276,9 +276,6 @@ header img{
 }
 
 /*--- CATEGORY ---*/
-#category  .produtos-thumb{
-	min-height: 466px;
-}
 
 /*--------- FOOTER --------------------------*/
 footer{
@@ -360,8 +357,12 @@ footer #credito{
 		height: 100%;
 	}
 
-	#category  .produtos-thumb{
-		min-height: 300px;
+	.produtos h3{
+		font-size: 20px;
+	}
+
+	.produtos-thumb{
+		min-height: 400px;
 	}
 }
 
