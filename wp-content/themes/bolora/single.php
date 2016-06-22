@@ -3,7 +3,7 @@
 	<div class="container content-areas" id="single-post">
 		<div id="single">
 			<?php if (have_posts()): while (have_posts()) : the_post();?>
-				<div class="row">
+				<div id="row-produtos-single" class="row">
 					<div class="col-md-6">
 						<div class="produtos-single">
 							<?php $url = wp_get_attachment_url(get_post_thumbnail_id($post->ID)); ?>
@@ -38,8 +38,5 @@
 			<div class="itens-cart-single">Você já adicionou <span class="quant-cart"><?php echo sizeof($_SESSION['cart']);?></span><a href="<?php echo get_settings('home'); ?>/pedidos"> à sua lista</a>
 			</div>
 		</div>
-
 	</div>
-	<!-- FALE CONOSCO-->
-	<?php include (TEMPLATEPATH . '/fale-conosco.php'); ?>
 	<?php get_footer();?>

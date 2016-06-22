@@ -18,11 +18,8 @@
 			<?php endwhile; else:?>
 			<?php endif;?>
 			<div class="paginator">
-				<?php wp_pagenavi(); ?>
+				<div class="paginator"><?php wp_pagenavi(); ?></div>
 			</div>
 		</div>
-
 	</div>
-	<!-- FALE CONOSCO-->
-	<?php include (TEMPLATEPATH . '/fale-conosco.php'); ?>
 	<?php get_footer();?>

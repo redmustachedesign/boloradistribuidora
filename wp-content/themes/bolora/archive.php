@@ -23,6 +23,4 @@
 		</div>
 
 	</div>
-	<!-- FALE CONOSCO-->
-	<?php include (TEMPLATEPATH . '/fale-conosco.php'); ?>
 	<?php get_footer();?>
