@@ -1,8 +1,11 @@
 <?php include (TEMPLATEPATH . '/fale-conosco.php'); ?>
 	<footer>
 		<div class="container">
-			<img src="<?php bloginfo('template_directory'); ?>/images/logo-footer.png">
-			<p id="credito">Tema criado por <a href="https://www.facebook.com/redmustachedesign/" target="_blank"><strong>Red Mustache Design</strong></a> e desenvolvido em <strong>WordPress</strong></p>
+			<div id="logo-footer" class="col-md-10 col-md-offset-1">
+				<img src="<?php bloginfo('template_directory'); ?>/images/logo-footer.png">
+			</div>
+			<p class="col-md-10 col-md-offset-1">Entre em contato conosco também através do telefone: <strong>(61) 3081-2225</strong> ou solicite um orçamento com nossa equipe através do email <strong>vendas@boloradistribuidora.com.br</strong></p>
+			<p id="credito">Tema criado por <a href="http://redmustachedesign.github.io/" target="_blank"><strong>Red Mustache Design</strong></a> e desenvolvido em <strong>WordPress</strong></p>
 		</div>
 	</footer>
 <?php wp_footer(); ?>

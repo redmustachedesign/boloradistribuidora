@@ -232,10 +232,15 @@ header img{
 }
 
 /*--PAGE--*/
-.page{
+.pages{
 	height: 100%;
 	overflow: hidden;
-	padding-bottom:20px;
+	padding: 20px 0px 30px 0px;
+}
+
+.pages h1{
+	color: #8bc53e;
+	text-align: center;
 }
 
 .list-page{
@@ -251,7 +256,8 @@ header img{
 
 .list-page input{
 	padding: 5px 10px;
-	width: 300px;
+	width: 100%;
+	max-width: 300px;
 }
 
 .page-pedidos input{
@@ -285,6 +291,14 @@ footer{
 	padding: 30px 0px 20px 0px;
 }
 
+#logo-footer{
+	margin-bottom: 5px;
+}
+
+footer img{
+	width: 100px;
+}
+
 footer a{
 	color: white;
 }
@@ -292,6 +306,7 @@ footer a{
 footer #credito{
 	margin-top: 10px;
 	font-size: 10px;
+	clear: both;
 }
 
 /*TABLET PAISAGEM*/
