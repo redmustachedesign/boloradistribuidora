@@ -142,7 +142,8 @@ header img{
 
 .produtos-thumb{
 	transition: linear .2s;
-	min-height:390px;
+	height: 400px;
+	overflow: hidden;
 }
 
 .produtos-thumb:hover{
@@ -374,10 +375,6 @@ footer #credito{
 
 	.produtos h3{
 		font-size: 20px;
-	}
-
-	.produtos-thumb{
-		min-height: 400px;
 	}
 }
 
